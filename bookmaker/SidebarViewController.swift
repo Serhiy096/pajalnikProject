@@ -11,7 +11,7 @@ import UIKit
 class SidebarViewController: UITableViewController {
     
     var menuItems =  [String]()
-    
+    let cLoginViewController = "LoginViewController"
     
     override func viewDidLoad() {
         menuItems = ["PROFILE","MATCHES","NEW EVENT","SETTINGS","LOGOUT"]
@@ -26,6 +26,11 @@ class SidebarViewController: UITableViewController {
         return 1
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "logoutSegue" {
+            segue.destinationViewController
+        }
+    }
     
     
 }

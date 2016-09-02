@@ -21,13 +21,11 @@ class ProfileViewController: UIViewController {
        
     
     override func viewDidLoad() {
-        self.storyboard?.instantiateViewControllerWithIdentifier(cEventListViewController).childViewControllers
-        self.storyboard?.instantiateViewControllerWithIdentifier(cAdminViewController).childViewControllers
 
-        
         if self.revealViewController() != nil {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        self.childViewControllerForStatusBarStyle()
     }
     
     

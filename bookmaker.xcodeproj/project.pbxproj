@@ -22,7 +22,7 @@
 		843760691D70883A009556C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843760681D70883A009556C6 /* User.swift */; };
 		8437606F1D7093EA009556C6 /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8437606E1D7093EA009556C6 /* Events.plist */; };
 		843BAE311D745FF4006FA3F4 /* CustomCellBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BAE301D745FF4006FA3F4 /* CustomCellBackground.swift */; };
-		843BAE331D748338006FA3F4 /* CustomLoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BAE321D748338006FA3F4 /* CustomLoginBackground.swift */; };
+		843BAE331D748338006FA3F4 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BAE321D748338006FA3F4 /* CustomBackground.swift */; };
 		843BAE351D748E47006FA3F4 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BAE341D748E47006FA3F4 /* AdminViewController.swift */; };
 		84401EF21D7848CA007F2336 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84401EF11D7848CA007F2336 /* SWRevealViewController.m */; };
 		84401EF41D7855A4007F2336 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84401EF31D7855A4007F2336 /* SidebarViewController.swift */; };
@@ -74,7 +74,7 @@
 		8437606E1D7093EA009556C6 /* Events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Events.plist; path = ../Events.plist; sourceTree = "<group>"; };
 		843BAE2D1D74201D006FA3F4 /* bookmaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bookmaker-Bridging-Header.h"; sourceTree = "<group>"; };
 		843BAE301D745FF4006FA3F4 /* CustomCellBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellBackground.swift; sourceTree = "<group>"; };
-		843BAE321D748338006FA3F4 /* CustomLoginBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginBackground.swift; sourceTree = "<group>"; };
+		843BAE321D748338006FA3F4 /* CustomBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		843BAE341D748E47006FA3F4 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		84401EF01D7848CA007F2336 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		84401EF11D7848CA007F2336 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			children = (
 				843760581D706136009556C6 /* EventCell.swift */,
 				843BAE301D745FF4006FA3F4 /* CustomCellBackground.swift */,
-				843BAE321D748338006FA3F4 /* CustomLoginBackground.swift */,
+				843BAE321D748338006FA3F4 /* CustomBackground.swift */,
 				8428DC9C1D75CB6B00A05C91 /* BackgroundRect.swift */,
 			);
 			name = Cells;
@@ -191,6 +191,7 @@
 		8437605D1D707BE9009556C6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84D38B411D799095009DCD45 /* Other */,
 				84401EEF1D7848A1007F2336 /* SWRevealViewController */,
 				843760651D7086B9009556C6 /* Managers */,
 				843760601D707F34009556C6 /* Models */,
@@ -229,6 +230,13 @@
 				843BAE2D1D74201D006FA3F4 /* bookmaker-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		84D38B411D799095009DCD45 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +377,7 @@
 				843BAE351D748E47006FA3F4 /* AdminViewController.swift in Sources */,
 				843760671D7086DF009556C6 /* JsonManager.swift in Sources */,
 				84401EF21D7848CA007F2336 /* SWRevealViewController.m in Sources */,
-				843BAE331D748338006FA3F4 /* CustomLoginBackground.swift in Sources */,
+				843BAE331D748338006FA3F4 /* CustomBackground.swift in Sources */,
 				8428DC9B1D75AA5500A05C91 /* ProfileViewController.swift in Sources */,
 				843760591D706136009556C6 /* EventCell.swift in Sources */,
 				84401EF41D7855A4007F2336 /* SidebarViewController.swift in Sources */,

@@ -7,21 +7,17 @@
 //
 
 import UIKit
-class CustomLoginBackground: UIView {
+class CustomBackground: UIView {
     
     override func drawRect(rect: CGRect) {
-        
+        let startColor = UIColor(red: 41/255, green: 128/255, blue: 185/255, alpha: 1.0).CGColor
+        //        rgb(52, 152, 219)
+        let endColor = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0).CGColor
+        //        rgb(41, 128, 185)
         
         let context = UIGraphicsGetCurrentContext()
         
-        
-        let clearColor = UIColor.clearColor().CGColor
-        let lightBlue  = UIColor(colorLiteralRed: 51/255, green: 150/255, blue: 1, alpha: 1).CGColor
-        
-        
-        
-        
-        let colors = [lightBlue,clearColor]
+        let colors = [startColor,endColor]
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let paperRect = CGGradientCreateWithColors(colorSpace, colors, [0.0,1.0])
         

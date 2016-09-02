@@ -28,28 +28,26 @@ class AdminViewController: UIViewController {
     @IBOutlet weak var iTotalField: UITextField!
     @IBOutlet weak var moreITotalField: UITextField!
     
+    @IBOutlet weak var saveMatch: UIButton!
     override func viewDidLoad() {
         
+        if self.revealViewController() != nil {
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         
-        
-        self.addSaveButton()
-        
+        saveMatch.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(AdminViewController.saveMatchAction)))
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
     }
     override func viewWillDisappear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
     }
     
-    func addSaveButton(){
-        let saveButton : UIBarButtonItem  = UIBarButtonItem.init(title: "Save", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(AdminViewController.saveMatch))
-        
-        self.navigationItem.rightBarButtonItem = saveButton
-        
-    }
     
-    func saveMatch()  {
-    // do somethink
-     self.navigationController?.popViewControllerAnimated(true)
+    func saveMatchAction()  {
+        self.revealViewController().pushFrontViewController(self.storyboard?.instantiateViewControllerWithIdentifier(cEventListViewController), animated: true)
     }
     
     

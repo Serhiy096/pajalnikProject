@@ -23,17 +23,18 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Do any additional setup after loading the view, typically from a nib.
         let currentUser = CoreDataManager.sharedInstance.getCurrentUser()
         self.userNameLabel.text = currentUser.userName
         let money = String(currentUser.userBalance)
         self.userBalanceLabel.text = "\(money) $"
-        
+ 
         self.table.delegate = self
         self.table.dataSource = self
         self.navigationController?.navigationBarHidden = false
-
+        if self.revealViewController() != nil {
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         
     }
     
