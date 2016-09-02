@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Action" syncable="YES">
+        <attribute name="action_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="action_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bet_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="proffit" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stack" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Bet" syncable="YES">
+        <attribute name="bat_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="coefficient" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="event" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Match" syncable="YES">
+        <attribute name="event_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="guests" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hosts" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="user_balance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_password" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User_bet" syncable="YES">
+        <attribute name="action_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="match_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bet" positionX="-36" positionY="54" width="128" height="90"/>
+        <element name="Match" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="User" positionX="-54" positionY="27" width="128" height="120"/>
+        <element name="Action" positionX="-45" positionY="45" width="128" height="135"/>
+        <element name="User_bet" positionX="-36" positionY="72" width="128" height="90"/>
+    </elements>
 </model>
